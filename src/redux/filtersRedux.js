@@ -1,6 +1,6 @@
 /* SELECTORS */
 
-export const getAllFilters = ({filters}) => filters;
+export const getAllFilters = ({ filters }) => filters;
 
 /* ACTIONS */
 

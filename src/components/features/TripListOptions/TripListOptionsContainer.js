@@ -1,7 +1,7 @@
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import TripListOptions from './TripListOptions';
-import {getAllTags} from '../../../redux/tagsRedux';
-import {getAllFilters, changeSearchPhrase} from '../../../redux/filtersRedux';
+import { getAllTags } from '../../../redux/tagsRedux';
+import { getAllFilters, changeSearchPhrase } from '../../../redux/filtersRedux';
 
 const mapStateToProps = state => ({
   tags: getAllTags(state),
@@ -13,4 +13,7 @@ const mapDispatchToProps = dispatch => ({
   // TODO - add more dispatchers for other filters
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(TripListOptions);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(TripListOptions);
