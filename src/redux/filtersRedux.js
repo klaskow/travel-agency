@@ -22,8 +22,6 @@ export const removeTag = payload => ({ payload, type: REMOVE_TAG });
 
 // reducer
 export default function reducer(statePart = [], action = {}) {
-  const index = statePart.tags.indexOf(action.payload);
-
   switch (action.type) {
     case CHANGE_PHRASE:
       return {
@@ -44,6 +42,8 @@ export default function reducer(statePart = [], action = {}) {
         tags: [...statePart.tags, action.payload],
       };
     case REMOVE_TAG:
+      /*eslint no-case-declarations: "off"*/
+      const index = statePart.tags.indexOf(action.payload);
       return {
         ...statePart,
         tags: [
