@@ -39,10 +39,10 @@ const OrderOptionIcons = ({
 };
 
 OrderOptionIcons.propTypes = {
-  values: PropTypes.array.isRequired,
-  setOptionValue: PropTypes.func.isRequired,
+  values: PropTypes.array,
+  setOptionValue: PropTypes.func,
   required: PropTypes.bool,
-  currentValue: PropTypes.string.isRequired,
+  currentValue: PropTypes.string,
 };
 
 export default OrderOptionIcons;

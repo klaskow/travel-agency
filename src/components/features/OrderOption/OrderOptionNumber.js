@@ -22,12 +22,12 @@ const OrderOptionNumber = ({
 };
 
 OrderOptionNumber.propTypes = {
-  currentValue: PropTypes.node.isRequired,
-  setOptionValue: PropTypes.func.isRequired,
-  tripCost: PropTypes.string.isRequired,
+  currentValue: PropTypes.node,
+  setOptionValue: PropTypes.func,
+  tripCost: PropTypes.string,
   limits: PropTypes.shape({
-    min: PropTypes.number.isRequired,
-    max: PropTypes.number.isRequired,
+    min: PropTypes.number,
+    max: PropTypes.number,
   }),
 };
 
