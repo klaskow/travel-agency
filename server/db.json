@@ -1,0 +1,19 @@
+{
+  "orders": [
+    {
+      "car-rental": "suv",
+      "accommodation": "suite",
+      "features": ["all-inclusive", "kitchen", "pool", "security"],
+      "adults": "2",
+      "children": "3",
+      "name": "Kamil",
+      "contact": "kamil@domain.com",
+      "start-date": "2019-10-30T20:33:30.000Z",
+      "totalCost": "$195,233",
+      "tripName": "Pleasant travel in cool Turkey",
+      "tripId": "5cc1d10130dfa407e2e54e20",
+      "countryCode": "TUR",
+      "id": 2
+    }
+  ]
+}

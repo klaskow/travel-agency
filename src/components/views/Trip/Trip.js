@@ -24,6 +24,7 @@ const Trip = ({
   description,
   country,
   intro,
+  id,
 }) => {
   if (error) return <NotFound />;
   else
@@ -59,7 +60,12 @@ const Trip = ({
             <Col xs={12}>
               <PageTitle text="Trip details" />
               {HTMLParser(description)}
-              <OrderForm tripCost={cost} />
+              <OrderForm
+                tripCost={cost}
+                tripName={name}
+                tripId={id}
+                countryCode={country.alpha3Code}
+              />
             </Col>
           </Row>
         </Grid>

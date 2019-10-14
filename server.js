@@ -12,11 +12,11 @@ const dbFileDist = distDir + '/db.json';
 if (
   !fs.existsSync(dbFileDist) && // comment out this line to always overwrite db.json
   fs.existsSync(dbFileSrc)
-){
+) {
   fs.copyFileSync(dbFileSrc, dbFileDist);
 }
 
-if (fs.existsSync(dbFileDist)){
+if (fs.existsSync(dbFileDist)) {
   const jsonServer = require('json-server');
   const server = jsonServer.create();
   const router = jsonServer.router(dbFileDist);
